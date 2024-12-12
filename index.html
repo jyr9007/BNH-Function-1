@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bear Ninja Hunter Game</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bear Ninja Hunter 4</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Bear Ninja Hunter Game</h1>
-    <div id="game-container">
-        <p id="welcome-message"></p>
-        <div id="countdown"></div>
-        <p id="game-result"></p>
-        <p id="stats"></p>
+  <div class="container">
+    <h2>Bear Ninja Hunter</h2>
+    <ul class="rules">
+      <li>Bear beats Ninja</li>
+      <li>Ninja beats Hunter</li>
+      <li>Hunter beats Bear</li>
+    </ul>
+    <hr>
+    <div class="buttons">
+      <button onclick="playGame('Bear')">Bear</button>
+      <button onclick="playGame('Ninja')">Ninja</button>
+      <button onclick="playGame('Hunter')">Hunter</button>
     </div>
-    <script src="js/script.js"></script>
+    <hr>
+    <div id="result-container" class="hidden">
+      <div id="result-box"></div>
+      <p id="win-counter"></p>
+      <button onclick="resetGame()">Play Again</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
