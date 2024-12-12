@@ -1,43 +1,78 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  text-align: center;
+  padding: 20px;
 }
 
-h1 {
-    margin-top: 20px;
-    font-size: 28px;
-    color: #000;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-#game-container {
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 10px;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
+h2 {
+  color: #4caf50;
 }
 
-#countdown {
-    font-size: 20px;
-    color: #ff0000;
-    margin-top: 10px;
+.rules {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin: 20px auto;
+  display: inline-block;
+  text-align: left;
 }
 
-#game-result {
-    margin-top: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #007bff;
+.rules li {
+  font-size: 16px;
 }
 
-#stats {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
+hr {
+  width: 70%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+.buttons {
+  margin: 20px;
+}
+
+button {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #005f5f;
+}
+
+#result-container {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#result-box {
+  border: 2px solid #4caf50;
+  background-color: #e8f5e9;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#win-counter {
+  font-size: 18px;
+  font-weight: bold;
 }
